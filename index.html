@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Form Demo</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .hidden { display: none; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+
+    <form id="registrationForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username">
+        <span class="error hidden" id="usernameError">Required</span>
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password">
+        <button type="button" id="togglePassword">👀</button>
+        <span class="error hidden" id="passwordError">Required</span>
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="message"></p>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
